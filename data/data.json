@@ -1,0 +1,182 @@
+[
+  {
+    "name": "dhaka city tour",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/images/tour_photos/day-tours/old-dhaka-tour/old-dhaka-city-day-tour-avatar-414x311-o.jpg",
+    "description": "Day tour from Dhaka to Sonargaon, the old capital of Bengal, during the medieval period, to see its highlights. Visit Panam Nagar, an entirely abandoned city of Hindu cotton merchants from the early 19th century, the main attraction of Sonargaon. Also, visit Sonargaon Folk Arts and Crafts Museum, the newly renovated Boro Sardar Bari – a colonial period mansion, and a school for the children of a lower caste Hindu community. See pre-Mughal architecture Goaldi Mosque and the tomb of a Sultan whose capital was Sonargaon. Have a pleasant boat ride on the mighty river Meghna and experience village life on a sandbank island. A must-doing tour if you are visiting Bangladesh.",
+    "price": 1700,
+    "location": ["new dhaka", "old dhaka"],
+    "day": 1,
+    "status": "in-stock"
+  },
+  {
+    "name": "Sonargaon & Panam City Tour",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/images/tour_photos/day-tours/old-capital-tour/bangladesh-old-capital-sonargaon-day-tour-avatar-414x311-o.jpg",
+    "description": "Day tour from Dhaka to Sonargaon, the old capital of Bengal, during the medieval period, to see its highlights. Visit Panam Nagar, an entirely abandoned city of Hindu cotton merchants from the early 19th century, the main attraction of Sonargaon. Also, visit Sonargaon Folk Arts and Crafts Museum, the newly renovated Boro Sardar Bari – a colonial period mansion, and a school for the children of a lower caste Hindu community. See pre-Mughal architecture Goaldi Mosque and the tomb of a Sultan whose capital was Sonargaon. Have a pleasant boat ride on the mighty river Meghna and experience village life on a sandbank island. A must-doing tour if you are visiting Bangladesh.",
+    "price": 1000,
+    "location": ["Sonargaon"],
+    "day": 1,
+    "status": "in-stock"
+  },
+  {
+    "name": "Dhaka Architecture Tour",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/dhaka/architecture/dhaka-architecture-tour-louis-kahn-marina-tabassum-avatar-414x311-o.jpg",
+    "description": "Day tour to visit inside and outside of some of the best architectural buildings in Dhaka City. In this tour, you’ll see two Aga Khan Award for Architecture winning buildings in Bangladesh, the National Assembly Building by the world-famous US architect Louis Kahn and the Bait Ur Rouf Mosque by one of the best modern-day architects in Bangladesh, Marina Tabassum. Also, visit a few other contemporary architectural buildings in Dhaka, designed by some of the best architects in Bangladesh. If you are interested in architecture and want to see some of the best architectural buildings in Bangladesh, this is the tour you should book.",
+    "price": 1100,
+    "location": ["Dhaka"],
+    "day": 1,
+    "status": "in-stock"
+  },
+  {
+    "name": "Barisal Backwaters Tour",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/khulna/barisal-backwaters/barisal-backwaters-tour-avatar-414x311-o.jpg",
+    "description": "Barisal, the southern region of Bangladesh, is awash with rivers and canals, part of the Ganges Delta. Hundreds of them flow through this region, and the result is a deliciously lush landscape with more shades of green than you ever imagined. In Barisal Backwaters Tour, we’ll take you to explore some backstreets and bazaars full of activities in Dhaka and some remote areas in Barisal beyond the reach of the guide books, where you’ll receive a genuine welcome from the locals and experience their authentic life – an experience you can’t have in most parts of the world. A highly photogenic tour for anyone keen on photographing the life of people and their lifestyles. ",
+    "price": 4000,
+    "location": ["New Dhaka", "Old Dhaka", "Barisal"],
+    "day": 3,
+    "status": "in-stock"
+  },
+  {
+    "name": "Sundarban Tour in Small Groups (6 Travelers Max)",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/khulna/sundarbans/sundarbans-tour-bangladesh-avatar-414x311-o.jpg",
+    "description": "An exclusive tour to visit Sundarban, the largest mangrove forest on earth, and a UNESCO World Heritage Site. Stay on our small houseboat and explore the forest for full three days. Our tours start at Mongla, the edge of the forest, with a group of a maximum of 6 travelers only – unlike the picnic parties of the traditional operators from Khulna on large boats with 40-70 people and wasting a full day in a round-trip to reach the forest and back. Get an authentic experience of Sundarban and a chance to see Bengal tigers, spotted deer, river dolphins, wild boars, clawless otters, monkeys, and salt-water crocodiles, together with many other species of birds and wildlife.",
+    "price": 5000,
+    "location": ["mongla", "sundarban mangrove forest"],
+    "day": 4,
+    "status": "in-stock"
+  },
+  {
+    "name": "Dhaka, Bagerhat & Sundarbans Tour",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/khulna/dhaka-bagerhat-sundarbans/dhaka-bagerhat-sundarbans-tour-avatar-414x311-o.jpg",
+    "description": "Dhaka, Bagerhat & Sundarbans Tour will take you to visit the key attractions of New & Old Dhaka, see the most significant mosques and a magnificent Hindu temple in Bagerhat, and in a whole three-day excursion to the Sundarbans Mangrove Forest. You’ll visit two UNESCO World Heritage Sites on this tour. A juxtaposed tour to enjoy the hustle and bustle of Dhaka, the quietness of Bagerhat, and the tranquil Sundarbans. This is the first tour you should book in Bangladesh if you have limited time. Also, booking this tour will be most convenient if you plan to combine your Bangladesh tour with visiting India. Adding a day, we can transfer you to the Benapole/Petrapole border to cross over to India and reach Kolkata. ",
+    "price": 10000,
+    "location": ["old dhaka", "bagerhat", "sundarebans mongrove forest"],
+    "day": 5,
+    "status": "in-stock"
+  },
+  {
+    "name": "Best of Rajshahi",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/rajshahi/best/rajshahi-best-tour-avatar-414x311-o.jpg",
+    "description": "Experience the life and sights of north-western Bangladesh, where the country’s best archaeological sites are located. Visit Puthia, a village full of bewitching Hindu temples ornate with beautiful terracotta. See Kusumba Mosque, a beautiful stone-built mosque from the 16th century, and Somapura Mahavihara – an 8th-century Buddhist monastery and a UNESCO world heritage site. Also, visit a Santhal tribal village in Rajshahi and a sandbank island of the Brahmaputra to experience their lifestyle and struggle with natural disasters. See the largest bazaar in the region, full of activities and an excellent place for photography. A tour to experience the very best that north-western Bangladesh has to offer.",
+    "price": 4200,
+    "location": ["rajshahi", "puthia", "kusumba", "paharpur", "sariakandi"],
+    "day": 3,
+    "status": "in-stock"
+  },
+  {
+    "name": "Exploring Rajshahi",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/rajshahi/exploring/rajshahi-exploring-tour-avatar-414x311-o.jpg",
+    "description": "Explore the best archaeological sites of Bangladesh. Start by visiting temple village Puthia, continue to the ancient Bengal capital Gaur, medieval period Kusumba Mosque, 8th-century Somapuri Mahabhihara at Paharpur, a Santhal tribal village, the largest bazaar in north-western Bangladesh, and finish with visiting chars of river Jamuna in Sariakandi. Best tour to experience the life and sights of north-western Bangladesh.",
+    "price": 5000,
+    "location": ["rajshahi", "puthia", "gauda"],
+    "day": 4,
+    "status": "in-stock"
+  },
+  {
+    "name": "Discover Rajshahi",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp_gLoBHhWSU1XcMNmZ3o_hmoeQYXnc86xLQ&usqp=CAU",
+    "description": "Explore the most impressive archaeological sites of the whole northwest region. You’ll visit an 8th-century Buddhist monastery and a UNESCO world heritage site, gorgeous mosques from the medieval period, its finest temples and palaces, and experience the lifestyle in a Santhal tribal village and on the river islands on Jamuna. Best tour to explore the north-western region. ",
+    "price": 7700,
+    "location": ["rajshahi", "puthia", "dinajpur", "rangpur"],
+    "day": 6,
+    "status": "in-stock"
+  },
+  {
+    "name": "Srimangal Day Tour",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/sylhet/srimangal-day/srimangal-day-tour-avatar-414x311-o.jpg",
+    "description": "Spend a day visiting Lawachhara National Park, tribal villages, pineapple gardens, and lemon orchards, walking inside the trails through tea plantations, tasting the famous 7 layer tea, and many more. Best tour to experience Srimangal on a single day from Dhaka. ",
+    "price": 1400,
+    "location": ["srimangal"],
+    "day": 1,
+    "status": "in-stock"
+  },
+  {
+    "name": "Srimangal Overnight Tour",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/sylhet/srimangal-overnight/srimangal-overnight-tour-avatar-414x311-o.jpg",
+    "description": "Srimangal is the epicenter of tea-growing culture and should be included in every traveler’s itinerary during a visit to Bangladesh. With its picturesque scenery and dominant tea culture, it really is one of Bangladesh’s stand-alone destinations. In Srimangal Overnight Tour, we’ll take you to visit the numerous tea plantations, a tribal village, and a tribal handicraft market. You’ll trek through Lawachara National Park in search of the endangered Hollock Gibbons for which it is famous, taste 7 Layers Tea, and much more. Perfect tour to spend a weekend if you are living in Bangladesh! ",
+    "price": 2500,
+    "location": ["srimangal"],
+    "day": 2,
+    "status": "in-stock"
+  },
+  {
+    "name": "Srimangal Leisure Tour",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/sylhet/srimangal-leisure/srimangal-tour-package-avatar-414x311-o.jpg",
+    "description": "Srimangal is the tea capital of Bangladesh. This hilly area, with endless tea plantations and magnificent forests, is one of the country’s most picturesque and enjoyable parts. In the Srimangal Leisure Tour, you’ll walk through the trails in some beautiful tea estates, trek inside Lawachhara National Park in search of endangered hoolock gibbons, visit remote villages of different tribes outside the tourist trails and experience their lifestyles. Also, visit a handicraft market of the Manipuri tribe, and taste the famous 7 Layers Tea of Srimangal. A quick tour to see some highlights of Bangladesh. ",
+    "price": 4000,
+    "location": ["srimangal"],
+    "day": 3,
+    "status": "in-stock"
+  },
+  {
+    "name": "Chittagong Ship Breaking Yard Tour",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/images/tour_photos/chittagong-tours/chittagong-ship-breaking-yards-tour/chittagong-ship-breaking-yards-tour-avatar-200x150-oo.jpg",
+    "description": "Visit the Chittagong ship-breaking yard together with other interesting places in Chittagong in a single day. Starting and ending at Dhaka, you’ll fly to Chittagong in the morning, visit the attractions there for the whole day and return to Dhaka in the evening by an express train or on a flight.",
+    "price": 1800,
+    "location": ["chittagong"],
+    "day": 1,
+    "status": "in-stock"
+  },
+  {
+    "name": "Lalbagh Fort",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/sylhet/srimangal-overnight/srimangal-overnight-tour-avatar-414x311-o.jpg",
+    "description": "Srimangal is the epicenter of tea-growing culture and should be included in every traveler’s itinerary during a visit to Bangladesh. With its picturesque scenery and dominant tea culture, it really is one of Bangladesh’s stand-alone destinations. In Srimangal Overnight Tour, we’ll take you to visit the numerous tea plantations, a tribal village, and a tribal handicraft market. You’ll trek through Lawachara National Park in search of the endangered Hollock Gibbons for which it is famous, taste 7 Layers Tea, and much more. Perfect tour to spend a weekend if you are living in Bangladesh! ",
+    "price": 2500,
+    "location": ["dhaka"],
+    "day": 2,
+    "status": "in-stock"
+  },
+  {
+    "name": "Ahsan Manzi",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/sylhet/srimangal-overnight/srimangal-overnight-tour-avatar-414x311-o.jpg",
+    "description": "Srimangal is the epicenter of tea-growing culture and should be included in every traveler’s itinerary during a visit to Bangladesh. With its picturesque scenery and dominant tea culture, it really is one of Bangladesh’s stand-alone destinations. In Srimangal Overnight Tour, we’ll take you to visit the numerous tea plantations, a tribal village, and a tribal handicraft market. You’ll trek through Lawachara National Park in search of the endangered Hollock Gibbons for which it is famous, taste 7 Layers Tea, and much more. Perfect tour to spend a weekend if you are living in Bangladesh! ",
+    "price": 500,
+    "location": ["Kumartoli"],
+    "day": 1,
+    "status": "in-stock"
+  },
+  {
+    "name": "Somapura Mahavihara",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/sylhet/srimangal-overnight/srimangal-overnight-tour-avatar-414x311-o.jpg",
+    "description": "Srimangal is the epicenter of tea-growing culture and should be included in every traveler’s itinerary during a visit to Bangladesh. With its picturesque scenery and dominant tea culture, it really is one of Bangladesh’s stand-alone destinations. In Srimangal Overnight Tour, we’ll take you to visit the numerous tea plantations, a tribal village, and a tribal handicraft market. You’ll trek through Lawachara National Park in search of the endangered Hollock Gibbons for which it is famous, taste 7 Layers Tea, and much more. Perfect tour to spend a weekend if you are living in Bangladesh! ",
+    "price": 2000,
+    "location": ["Naogaon"],
+    "day": 2,
+    "status": "in-stock"
+  },
+  {
+    "name": "Patenga",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/sylhet/srimangal-overnight/srimangal-overnight-tour-avatar-414x311-o.jpg",
+    "description": "Srimangal is the epicenter of tea-growing culture and should be included in every traveler’s itinerary during a visit to Bangladesh. With its picturesque scenery and dominant tea culture, it really is one of Bangladesh’s stand-alone destinations. In Srimangal Overnight Tour, we’ll take you to visit the numerous tea plantations, a tribal village, and a tribal handicraft market. You’ll trek through Lawachara National Park in search of the endangered Hollock Gibbons for which it is famous, taste 7 Layers Tea, and much more. Perfect tour to spend a weekend if you are living in Bangladesh! ",
+    "price": 3000,
+    "location": ["Chattogram"],
+    "day": 3,
+    "status": "in-stock"
+  },
+  {
+    "name": "Mysore Palace",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/sylhet/srimangal-overnight/srimangal-overnight-tour-avatar-414x311-o.jpg",
+    "description": "Srimangal is the epicenter of tea-growing culture and should be included in every traveler’s itinerary during a visit to Bangladesh. With its picturesque scenery and dominant tea culture, it really is one of Bangladesh’s stand-alone destinations. In Srimangal Overnight Tour, we’ll take you to visit the numerous tea plantations, a tribal village, and a tribal handicraft market. You’ll trek through Lawachara National Park in search of the endangered Hollock Gibbons for which it is famous, taste 7 Layers Tea, and much more. Perfect tour to spend a weekend if you are living in Bangladesh! ",
+    "price": 20000,
+    "location": ["india"],
+    "day": 10,
+    "status": "in-stock"
+  },
+  {
+    "name": "Shah Jalal Dargah",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/sylhet/srimangal-overnight/srimangal-overnight-tour-avatar-414x311-o.jpg",
+    "description": "Srimangal is the epicenter of tea-growing culture and should be included in every traveler’s itinerary during a visit to Bangladesh. With its picturesque scenery and dominant tea culture, it really is one of Bangladesh’s stand-alone destinations. In Srimangal Overnight Tour, we’ll take you to visit the numerous tea plantations, a tribal village, and a tribal handicraft market. You’ll trek through Lawachara National Park in search of the endangered Hollock Gibbons for which it is famous, taste 7 Layers Tea, and much more. Perfect tour to spend a weekend if you are living in Bangladesh! ",
+    "price": 5000,
+    "location": ["sylhet"],
+    "day": 4,
+    "status": "in-stock"
+  },
+  {
+    "name": "Golden Temple",
+    "image": "https://nijhoom.b-cdn.net/wp-content/uploads/tours/sylhet/srimangal-overnight/srimangal-overnight-tour-avatar-414x311-o.jpg",
+    "description": "Srimangal is the epicenter of tea-growing culture and should be included in every traveler’s itinerary during a visit to Bangladesh. With its picturesque scenery and dominant tea culture, it really is one of Bangladesh’s stand-alone destinations. In Srimangal Overnight Tour, we’ll take you to visit the numerous tea plantations, a tribal village, and a tribal handicraft market. You’ll trek through Lawachara National Park in search of the endangered Hollock Gibbons for which it is famous, taste 7 Layers Tea, and much more. Perfect tour to spend a weekend if you are living in Bangladesh! ",
+    "price": 15000,
+    "location": ["india"],
+    "day": 8,
+    "status": "in-stock"
+  }
+]
