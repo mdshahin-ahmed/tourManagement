@@ -1,5 +1,20 @@
 // const Product = require("../models/Product");
 
+const Tour = require("../models/Tour");
+
+exports.getTourService = async (filters, queries) => {
+  console.log(queries);
+  const tours = await Tour.find(filters)
+    .skip(queries.skip)
+    .limit(queries.limit)
+    .select(queries.fields)
+    .sort(queries.sortBy);
+
+  const total = await Tour.countDocuments(filters);
+  const page = Math.ceil(total / queries.limit);
+  return { total, tours, page };
+};
+
 // exports.getProductService = async (filters, queries) => {
 //   const products = await Product.find(filters)
 //     .skip(queries.skip)
@@ -11,10 +26,10 @@
 //   return { total, products, page };
 // };
 
-// exports.createProductServices = async (data) => {
-//   const product = await Product.create(data);
-//   return product;
-// };
+exports.createTourServices = async (data) => {
+  const tour = await Tour.create(data);
+  return tour;
+};
 
 // exports.bulkUpdateProductByIdService = async (prodictId, data) => {
 //   const result = await Product.updateOne(
@@ -28,29 +43,5 @@
 //   // const product = await Product.findById(prodictId);
 //   // const result = await product.set(data).save();
 
-//   return result;
-// };
-
-// exports.bulkUpdateProductService = async (data) => {
-//   // const result = await Product.updateMany({ _id: data.ids }, data.data, {
-//   //   runValidators: true,
-//   // });
-
-//   const products = [];
-//   data.ids.forEach((product) => {
-//     products.push(Product.updateOne({ _id: product.id }, product.data));
-//   });
-//   const result = await Promise.all(products);
-//   console.log(result);
-//   return result;
-// };
-
-// exports.deleteProdectByIdService = async (id) => {
-//   const result = await Product.deleteOne({ _id: id });
-//   return result;
-// };
-
-// exports.bulkDeleteProductByIdService = async (data) => {
-//   const result = await Product.deleteMany({ _id: data.ids });
 //   return result;
 // };

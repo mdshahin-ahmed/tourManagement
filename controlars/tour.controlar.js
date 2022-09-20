@@ -1,81 +1,74 @@
-// const {
-//   getProductService,
-//   createProductServices,
-//   updatePRoductService,
-//   deleteProdectByIdService,
-//   bulkDeleteProductByIdService,
-// } = require("../services/product.services");
+const Tour = require("../models/Tour");
+const {
+  createTourServices,
+  getTourService,
+} = require("../services/tour.services");
 
-// module.exports.getProducts = async (req, res, next) => {
-//   try {
-//     // const products = await await Product.where("name")
-//     //   .equals(/\w/)
-//     //   .sort({ name: 1 })
-//     //   .where("quantity")
-//     //   .gt(50)
-//     //   .limit(2);
+module.exports.getTours = async (req, res, next) => {
+  try {
+    let filters = { ...req.query };
+    const excludeFields = ["sort", "page", "limit"];
 
-//     // {price:{$get:50}}
-//     // { price: { gt: '50' } }
+    excludeFields.forEach((find) => delete filters[find]);
 
-//     // console.log(req.query);
-//     let filters = { ...req.query };
+    let filtersString = JSON.stringify(filters);
+    filtersString = filtersString.replace(
+      /\b(gt|gte|lt|lte)\b/g,
+      (match) => `$${match}`
+    );
 
-//     // sort , page, limit -> exclude
+    filters = JSON.parse(filtersString);
 
-//     const excludeFields = ["sort", "page", "limit"];
-//     excludeFields.forEach((fild) => delete filters[fild]);
+    const queries = {};
+    if (req.query.sort) {
+      // price,quantity -> "price quantity"
+      const sortBy = req.query.sort.split(",").join(" ");
+      queries.sortBy = sortBy;
+    }
+    if (req.query.fields) {
+      const fields = req.query.fields.split(",").join(" ");
+      queries.fields = fields;
+      console.log(fields);
+    }
 
-//     // gt, lt, gte, lte
+    if (req.query.page) {
+      const { page = 1, limit = 5 } = req.query;
 
-//     let filtersString = JSON.stringify(filters);
-//     filtersString = filtersString.replace(
-//       /\b(gt|gte|lt|lte)\b/g,
-//       (match) => `$${match}`
-//     );
+      const skip = (page - 1) * parseInt(limit);
+      queries.skip = skip;
+      queries.limit = parseInt(limit);
+    }
 
-//     filters = JSON.parse(filtersString);
+    const product = await getTourService(filters, queries);
+    res.status(200).json({
+      status: "success",
+      data: product,
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: "faild",
+      message: "can't get data",
+      error: error.message,
+    });
+  }
+};
 
-//     const queries = {};
-//     if (req.query.sort) {
-//       // price,quantity -> "price quantity"
-//       const sortBy = req.query.sort.split(",").join(" ");
-//       queries.sortBy = sortBy;
-//     }
-//     if (req.query.fields) {
-//       const fields = req.query.fields.split(",").join(" ");
-//       queries.fields = fields;
-//       console.log(fields);
-//     }
-
-//     if (req.query.page) {
-//       const { page = 1, limit = 10 } = req.query;
-//       // each page 10 product
-//       // page 1-> 1-10
-//       // page 2-> 11-20
-//       // page 3-> 21-30  -> page 3 skip 1-20 3-1
-//       // page 4-> 31-40 -> page 4 skip 1-30 4-1
-//       // page 5-> 41-50
-
-//       const skip = (page - 1) * parseInt(limit);
-//       queries.skip = skip;
-//       queries.limit = parseInt(limit);
-//     }
-
-//     const product = await getProductService(filters, queries);
-
-//     res.status(200).json({
-//       status: "success",
-//       data: product,
-//     });
-//   } catch (error) {
-//     res.status(400).json({
-//       status: "faild",
-//       message: "can't get data",
-//       error: error.message,
-//     });
-//   }
-// };
+module.exports.createTour = async (req, res, next) => {
+  try {
+    const result = await createTourServices(req.body);
+    res.status(200).json({
+      status: "success",
+      message: "Data inserted successfully!",
+      data: result,
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: "fail",
+      message: "Data is not inserted",
+      error: error.message,
+    });
+  }
+};
 
 // module.exports.createProduct = async (req, res, next) => {
 //   try {

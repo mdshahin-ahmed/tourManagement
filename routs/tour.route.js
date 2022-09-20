@@ -7,10 +7,7 @@ const tourControler = require("../controlars/tour.controlar");
 // router.route("/bulk-delete").delete(productControler.bulkDeleteProduct);
 
 // root middle
-// router
-//   .route("/")
-//   .get(productControler.getProducts)
-//   .post(productControler.createProduct);
+router.route("/").get(tourControler.getTours).post(tourControler.createTour);
 
 // // dynamic last
 // router

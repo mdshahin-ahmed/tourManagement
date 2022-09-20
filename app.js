@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 });
 
 // posting to detabase
-app.use("/api/v1/tour", tourRoute);
+app.use("/api/v1/tours", tourRoute);
 
 module.exports = app;
 
