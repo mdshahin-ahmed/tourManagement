@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 });
 
 // posting to detabase
-app.use("/api/v1/tours", tourRoute);
+app.use("/api/v1", tourRoute);
 
 module.exports = app;
 
@@ -23,8 +23,8 @@ module.exports = app;
 // 3. tour.js/schema done
 
 // problem number 1 Done
-// problem number 2
+// problem number 2 Done
 // problem number 3
-// problem number 4
+// problem number 4 working
 // problem number 5
 // problem number 6 Done

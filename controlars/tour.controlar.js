@@ -3,6 +3,7 @@ const {
   createTourServices,
   getTourService,
   getChepestToursService,
+  updateTourByIdService,
 } = require("../services/tour.services");
 
 module.exports.getTours = async (req, res, next) => {
@@ -87,104 +88,19 @@ module.exports.chepestTours = async (req, res, next) => {
   }
 };
 
-// module.exports.createProduct = async (req, res, next) => {
-//   try {
-//     // save or create
-
-//     const result = await createProductServices(req.body); // if don't need update
-
-//     // result.loggers();
-
-//     // const product = new Product(req.body);
-
-//     // console.log(product.quantity);
-//     // if (product.quantity == 0) {
-//     //   product.status = "out-of-stock";
-//     // }
-//     // const result = await product.save();
-
-//     res.status(200).json({
-//       status: "success",
-//       message: "Data inserted successfully!",
-//       data: result,
-//     });
-//   } catch (error) {
-//     res.status(400).json({
-//       status: "fail",
-//       message: "Data is not inserted",
-//       error: error.message,
-//     });
-//   }
-// };
-
-// exports.updateProductById = async (req, res, next) => {
-//   try {
-//     const { id } = req.params;
-//     const result = await updatePRoductService(id, req.body);
-//     res.status(200).json({
-//       status: "Success",
-//       message: "Successfully updated the product",
-//     });
-//   } catch (error) {
-//     res.status(400).json({
-//       status: "fail",
-//       message: "Could't update th product",
-//       error: error.message,
-//     });
-//   }
-// };
-
-// exports.bulkUpdateProduct = async (req, res, next) => {
-//   try {
-//     const result = await bulkDeleteProductByIdService(req.body);
-//     res.status(200).json({
-//       status: "Success",
-//       message: "Successfully updated the product",
-//     });
-//   } catch (error) {
-//     res.status(400).json({
-//       status: "fail",
-//       message: "Could't update the product",
-//       error: error.message,
-//     });
-//   }
-// };
-// exports.deleteProductById = async (req, res, next) => {
-//   try {
-//     const { id } = req.params;
-//     if (!result.deletedCount) {
-//       return res.statue(400).json({
-//         status: "fail",
-//         error: "Could't delete the product",
-//       });
-//     }
-//     const result = await deleteProdectByIdService(id);
-//     res.status(200).json({
-//       status: "Success",
-//       message: "Successfully Deleted the product",
-//     });
-//   } catch (error) {
-//     res.status(400).json({
-//       status: "fail",
-//       message: "Could't Delete the product",
-//       error: error.message,
-//     });
-//   }
-// };
-
-// exports.bulkDeleteProduct = async (req, res, next) => {
-//   try {
-//     const result = await bulkDeleteProductByIdService(req.body);
-
-//     res.status(200).json({
-//       status: "Success",
-//       message: "Successfully deleted the given product",
-//     });
-//   } catch (error) {
-//     res.status(400).json({
-//       status: "fail",
-//       message: "Could't deleted the given product",
-//       error: error.message,
-//     });
-//   }
-// };
+exports.updateTourById = async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    const result = await updateTourByIdService(id, req.body);
+    res.status(200).json({
+      status: "Success",
+      message: "Successfully updated the product",
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: "fail",
+      message: "Could't update th product",
+      error: error.message,
+    });
+  }
+};

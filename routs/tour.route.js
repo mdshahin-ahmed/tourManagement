@@ -2,13 +2,13 @@ const express = require("express");
 const router = express.Router();
 const tourControler = require("../controlars/tour.controlar");
 
-// // diffrent first
-// router.route("/bulk-update").patch(productControler.bulkUpdateProduct);
-// router.route("/bulk-delete").delete(productControler.bulkDeleteProduct);
+router
+  .route("/tours")
+  .get(tourControler.getTours)
+  .post(tourControler.createTour);
+router.route("/tour/cheapest").get(tourControler.chepestTours);
 
-// root middle
-router.route("/").get(tourControler.getTours).post(tourControler.createTour);
-router.route("/cheapest").get(tourControler.chepestTours);
+router.route("/tour/:id").patch(tourControler.updateTourById);
 
 // // dynamic last
 // router

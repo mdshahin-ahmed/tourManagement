@@ -19,6 +19,17 @@ exports.getChepestToursService = async () => {
   return tours;
 };
 
+exports.updateTourByIdService = async (id, data) => {
+  console.log(id, data);
+  const result = await Tour.updateOne(
+    { _id: id },
+    { $set: data },
+    {
+      runValidators: true,
+    }
+  );
+};
+
 // exports.getProductService = async (filters, queries) => {
 //   const products = await Product.find(filters)
 //     .skip(queries.skip)
