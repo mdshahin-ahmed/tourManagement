@@ -2,6 +2,7 @@ const Tour = require("../models/Tour");
 const {
   createTourServices,
   getTourService,
+  getChepestToursService,
 } = require("../services/tour.services");
 
 module.exports.getTours = async (req, res, next) => {
@@ -65,6 +66,22 @@ module.exports.createTour = async (req, res, next) => {
     res.status(400).json({
       status: "fail",
       message: "Data is not inserted",
+      error: error.message,
+    });
+  }
+};
+
+module.exports.chepestTours = async (req, res, next) => {
+  try {
+    const result = await getChepestToursService();
+    res.status(200).json({
+      status: "success",
+      data: result,
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: "faild",
+      message: "can't get data",
       error: error.message,
     });
   }

@@ -8,6 +8,7 @@ const tourControler = require("../controlars/tour.controlar");
 
 // root middle
 router.route("/").get(tourControler.getTours).post(tourControler.createTour);
+router.route("/cheapest").get(tourControler.chepestTours);
 
 // // dynamic last
 // router

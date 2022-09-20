@@ -3,7 +3,6 @@
 const Tour = require("../models/Tour");
 
 exports.getTourService = async (filters, queries) => {
-  console.log(queries);
   const tours = await Tour.find(filters)
     .skip(queries.skip)
     .limit(queries.limit)
@@ -13,6 +12,11 @@ exports.getTourService = async (filters, queries) => {
   const total = await Tour.countDocuments(filters);
   const page = Math.ceil(total / queries.limit);
   return { total, tours, page };
+};
+
+exports.getChepestToursService = async () => {
+  const tours = await Tour.find({}).limit(3).sort("price");
+  return tours;
 };
 
 // exports.getProductService = async (filters, queries) => {
