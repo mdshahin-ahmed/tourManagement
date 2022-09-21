@@ -1,5 +1,3 @@
-// const Product = require("../models/Product");
-
 const Tour = require("../models/Tour");
 
 exports.getTourService = async (filters, queries) => {
@@ -29,17 +27,6 @@ exports.updateTourByIdService = async (id, data) => {
     }
   );
 };
-
-// exports.getProductService = async (filters, queries) => {
-//   const products = await Product.find(filters)
-//     .skip(queries.skip)
-//     .limit(queries.limit)
-//     .select(queries.fields)
-//     .sort(queries.sortBy);
-//   const total = await Product.countDocuments(filters);
-//   const page = Math.ceil(total / queries.limit);
-//   return { total, products, page };
-// };
 
 exports.createTourServices = async (data) => {
   const tour = await Tour.create(data);
