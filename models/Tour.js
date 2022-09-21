@@ -21,21 +21,21 @@ const tourSchema = mongoose.Schema(
     },
     price: {
       type: Number,
-      require: true,
+      required: true,
       min: [0, "Price can't be negative"],
     },
     location: {
-      type: Array,
+      type: [String],
       required: true,
     },
     day: {
       type: Number,
-      require: true,
+      required: true,
       min: [1, "Day can't be zero"],
     },
     status: {
       type: String,
-      require: true,
+      required: true,
       enum: {
         values: ["in-stock", "out-of-stock", "discontimued"],
         message: "status can't be {VALUES}",
