@@ -8,12 +8,11 @@ router
   .post(tourControler.createTour);
 router.route("/tour/cheapest").get(tourControler.chepestTours);
 
+router.route("/tour/trending").get(tourControler.trendingTours);
+
 router.route("/tour/:id").patch(tourControler.updateTourById);
 
-// // dynamic last
-// router
-//   .route("/:id")
-//   .patch(productControler.updateProductById)
-//   .delete(productControler.deleteProductById);
+router.route("/tours/:id").get(tourControler.getToursById);
+// .patch(tourControler.updateViewCount);
 
 module.exports = router;

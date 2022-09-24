@@ -33,17 +33,36 @@ exports.createTourServices = async (data) => {
   return tour;
 };
 
-// exports.bulkUpdateProductByIdService = async (prodictId, data) => {
-//   const result = await Product.updateOne(
-//     { _id: prodictId },
-//     { $inc: data },
-//     {
-//       runValidators: true,
-//     }
-//   );
+exports.getProductByIdService = async (id) => {
+  const foundData = await Tour.findOne({ _id: id });
+  const updateData = foundData.viewCount + 1;
+  const result = await Tour.updateOne(
+    { _id: id },
+    { $set: { viewCount: updateData } }
+  );
+  return foundData;
+};
 
-//   // const product = await Product.findById(prodictId);
-//   // const result = await product.set(data).save();
+exports.getTrendingToursService = async () => {
+  const tours = await Tour.find({}).limit(3).sort("-viewCount");
+  return tours;
+};
 
-//   return result;
+// exports.updateViewCountService = async (id, data) => {
+//   // const foundData = await Tour.findOne({ _id: id });
+//   // const updateData = foundData.viewCount + 1;
+//   // const result = await Tour.updateOne(
+//   //   { _id: id },
+//   //   { $set: { viewCount: updateData } },
+//   //   {
+//   //     runValidators: true,
+//   //   }
+//   // );
+//   // const result = await Tour.updateMany(
+//   //   {},
+//   //   { $set: data },
+//   //   {
+//   //     runValidators: true,
+//   //   }
+//   // );
 // };

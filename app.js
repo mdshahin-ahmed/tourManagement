@@ -24,7 +24,7 @@ module.exports = app;
 
 // problem number 1 Done
 // problem number 2 Done
-// problem number 3
-// problem number 4 working
+// problem number 3 Working
+// problem number 4 Done
 // problem number 5
 // problem number 6 Done

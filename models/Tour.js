@@ -41,6 +41,12 @@ const tourSchema = mongoose.Schema(
         message: "status can't be {VALUES}",
       },
     },
+    viewCount: {
+      type: Number,
+      required: true,
+      min: [0, "initial view can't be less then 0"],
+      max: [0, "initial view can't be more then 0"],
+    },
   },
   {
     timestamps: true,

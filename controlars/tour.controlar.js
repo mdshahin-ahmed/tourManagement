@@ -4,6 +4,9 @@ const {
   getTourService,
   getChepestToursService,
   updateTourByIdService,
+  getProductByIdService,
+  updateViewCountService,
+  getTrendingToursService,
 } = require("../services/tour.services");
 
 module.exports.getTours = async (req, res, next) => {
@@ -104,3 +107,54 @@ exports.updateTourById = async (req, res, next) => {
     });
   }
 };
+
+exports.getToursById = async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    const tours = await getProductByIdService(id);
+
+    res.status(200).json({
+      status: "success",
+      data: tours,
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: "faild",
+      message: "can't get data",
+      error: error.message,
+    });
+  }
+};
+
+module.exports.trendingTours = async (req, res, next) => {
+  try {
+    const result = await getTrendingToursService();
+    res.status(200).json({
+      status: "success",
+      data: result,
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: "faild",
+      message: "can't get data",
+      error: error.message,
+    });
+  }
+};
+
+// exports.updateViewCount = async (req, res, next) => {
+//   try {
+//     const { id } = req.params;
+//     const result = await updateViewCountService(id, req.body);
+//     res.status(200).json({
+//       status: "Success",
+//       message: "Successfully updated the product",
+//     });
+//   } catch (error) {
+//     res.status(400).json({
+//       status: "fail",
+//       message: "Could't update th product",
+//       error: error.message,
+//     });
+//   }
+// };
